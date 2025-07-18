@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🖋️ Ứng Dụng Nhận Diện Chữ Ký AI
 
 Ứng dụng AI nhận diện và xác minh chữ ký sử dụng Siamese Network và OpenCV.
@@ -327,3 +328,6 @@ Project Link: [https://github.com/Duc-bug/signature_ai_app](https://github.com/D
 ---
 
 ⭐ **Hãy cho dự án này một star nếu nó hữu ích cho bạn!** ⭐
+=======
+# app_nhan_dien_chu_ki
+>>>>>>> c9478961976dac6ff36049f0841787aab2825020
