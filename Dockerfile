@@ -9,13 +9,19 @@ RUN apt-get update && apt-get install -y \
     libxrender-dev \
     libgomp1 \
     curl \
+    build-essential \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
+# Upgrade pip first
+RUN pip install --upgrade pip
+
 # Copy requirements first (better caching)
 COPY requirements_railway.txt requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
+
+# Install packages with error handling
+RUN pip install --no-cache-dir --timeout 1000 -r requirements.txt
 
 # Copy application code
 COPY . .
