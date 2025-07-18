@@ -322,7 +322,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 **AI Assistant** - Phát triển bởi AI
 
-Project Link: [https://github.com/Duc-Bug/signature_ai_app](https://github.com/Duc-Bug/signature_ai_app)
+Project Link: [https://github.com/Duc-bug/signature_ai_app](https://github.com/Duc-bug/signature_ai_app)
 
 ---
 
