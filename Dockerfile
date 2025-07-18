@@ -29,12 +29,17 @@ COPY . .
 # Create necessary directories
 RUN mkdir -p data/signatures data/test
 
+# Copy startup script
+COPY start.sh .
+RUN chmod +x start.sh
+
 # Expose port
-EXPOSE $PORT
+EXPOSE 8080
+ENV PORT=8080
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
-    CMD curl --fail http://localhost:$PORT/_stcore/health || exit 1
+    CMD curl --fail http://localhost:8080/_stcore/health || exit 1
 
-# Run the app
-CMD streamlit run app.py --server.port=$PORT --server.address=0.0.0.0 --server.headless=true
+# Run the app with startup script
+CMD ["./start.sh"]
