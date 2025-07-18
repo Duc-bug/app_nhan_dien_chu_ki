@@ -1,0 +1,82 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environment - QUAN TRONG: Khong push venv
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# Large ML files - Khong push file model lon
+*.h5
+*.pkl
+*.joblib
+*.model
+*.weights
+*.ckpt
+*.pb
+
+# Large data files
+*.csv
+*.json
+*.npy
+*.npz
+data/demo_*
+data/test/
+data/signatures/
+
+# Keep only essential data
+!data/database.db
+!data/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.spec
+build/
+dist/
+SignatureAI_Portable/
+
+# Logs
+*.log
+
+# Local config
+config_local.py
+
+# Large binaries
+*.dll
+*.exe
+*.zip
+*.tar.gz
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
