@@ -28,27 +28,27 @@ ENV/
 .venv/
 .env/
 
-# Large ML files - Khong push file model lon
-*.h5
+# Large ML files - Keep model for Railway
+# *.h5  # Commented out - Railway can handle model files
 *.pkl
 *.joblib
-*.model
 *.weights
 *.ckpt
 *.pb
 
-# Large data files
+# Large data files - Keep essential data for Railway
 *.csv
 *.json
 *.npy
 *.npz
 data/demo_*
-data/test/
-data/signatures/
+# data/test/  # Keep test data for Railway
+# data/signatures/  # Keep signatures for Railway
 
-# Keep only essential data
+# Keep essential data for Railway
 !data/database.db
 !data/.gitkeep
+!model/signature_model.h5
 
 # IDE
 .vscode/
@@ -60,10 +60,10 @@ data/signatures/
 .DS_Store
 Thumbs.db
 
-# Build artifacts
-*.spec
-build/
-dist/
+# Build artifacts (keep for Railway)
+# *.spec  # Keep for potential EXE builds
+# build/  # Keep if needed
+# dist/   # Keep if needed
 SignatureAI_Portable/
 
 # Logs
@@ -80,3 +80,6 @@ config_local.py
 
 # Jupyter notebooks checkpoints
 .ipynb_checkpoints/
+
+# Railway specific
+.railway/
